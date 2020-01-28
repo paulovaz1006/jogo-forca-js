@@ -1,6 +1,7 @@
 @charset "utf-8";
 body{
 	font-size: 13pt;
+	background: linear-gradient(#f3c4e5,#f7f7f7);
 }
 .habilitado{
 	display:inline-block;
@@ -30,22 +31,27 @@ input[type="text"],
 button{
 	height: 50px;
 	font-size: 100%;
-	border: #000 1px solid;
-	margin-bottom: 10px;
+	border: transparent 1px solid;
+	margin-bottom: 20px;
+	text-align: center;
+	text-transform: capitalize;
+	color: #512b5e;
 }
 .corpo{
-	border: #000 1px solid;
+	border: #3b2358 3px solid;
 	width: 90%;
 	margin: auto;
 	padding-bottom: 150px;
 	min-height: 400px;
 	height: auto;
-	/*
-	padding: 50px;
-	*/
+	padding: 15px;
+	background: #141820;
+	border-radius: 20px;
 }
 span{
 	margin: 4px;
+	font-size: 20px;
+	color: #fff;
 }
 
 .parteEscrito{
@@ -62,38 +68,76 @@ span{
 .bnt:hover{
 	cursor: pointer;
 }
+.d-none{
+	display: none;
+}
 .entrada:focus{
 	background-color: #eee;
 }
-.letras,
-letra{
+.letrasTentadas, .letrasErradas{
+	text-transform: uppercase;
+}
+.letras{
 	display: block;
 }
 .letras{
-	margin-left: 50px;
+	/* margin-left: 10px; */
 }
 .alinhar{
 	font-size: 16pt;
 	text-align: center;
 }
+#bntTentar{
+	height: auto;
+	font-size: 18px;
+	/* background: #3b2358; */
+	color: #fff;
+	padding: 7px 20px;
+	border-radius: 8px;
+	background: linear-gradient(#774267,#a34d73);
+}
+#entradaLetra{
+	height: 31px;
+    border: #6b6b6b 1px solid;
+    border-radius: 6px;
+    width: 120px;
+}
 .alinhar .rotulo{
 	display: block;
+	margin-bottom: 10px;
+	color: #fff;
+}
+input:disabled {
+    background-color: #fff;
 }
 .pergunta{
 	text-transform: uppercase;
 	font-size: 18pt;
 	font-weight: bold;
+	margin-bottom: 19px;
+	margin-top: 10px;
 }
 .preenchimento{
 	font-size: 16pt;
+	margin-top: 20px;
+}
+#bntNovoJogo{
+	background: #b35a7a;
+    color: #ffffff;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 40px;
 }
 .preenchimento .rotulo{
 	text-transform: uppercase;
+	color: #fff;
 }
 .gerador{
 	width: 100%;
 	text-transform: uppercase;
 	text-align: center;
+	margin-top: 20px;
 }
 .selecionado{
 	text-transform: uppercase;
